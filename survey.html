@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="survey.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form!</title>
+</head>
+<body>
+    <img src="https://drive.google.com/thumbnail?id=1h2pJPdu8wiw84BtsPMa-cdDKxGPLfeCC" alt="discussion">
+    <!-- main -->
+    <div id="main">
+
+        <!-- title -->
+        <h1 id="title">Team Alpha Survey Form</h1>
+
+        <!-- Description -->
+        <p id="description">Thank you for taking time to help us improve</p>
+
+        <!-- survey form -->
+        <form id="survey-form">
+
+            <!-- name -->
+            <label id="name-label" for="name">Name</label><br>
+            <div id="input-field">
+                <input type="text" id="name" value="name" placeholder="Enter your Name" required> 
+            </div>
+            <br>
+
+            <!-- Email -->
+            <label for="email" id="email-label">Email</label>
+            <br>
+            <div>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            </div>
+            <br>
+
+            <!-- Age -->
+            <label for="number" id="number-label">Age (optional)</label>
+            <br>
+            <div>
+                <input type="number" id="number" name="number" min="18" max="40" placeholder="Enter your Age" required>
+            </div>
+            <br>
+
+            <!-- dropdown -->
+            Which Option best describes your current role ?
+            <br>
+            <div>
+                <select name="role" id="dropdown">
+
+                    <!-- options -->
+                    <option id="Student">Student</option>
+                    <option id="Full time job">Full time job</option>
+                    <option id="Full time Learner">Full time Learner</option>
+                    <option id="Prefer not to say">Prefer not to say</option>
+                    <option id="Other">Other</option>
+
+                </select>
+            </div>
+            <br>
+
+            <!-- radio buttons -->
+            Would you like to invite your friends to join our Team ?
+            <br>
+            <div>
+                <input type="radio" id="Definitely" name="opinion" value="Definitely" checked>
+                <label for="Definitely">Definitely</label>
+                <br>
+                <input type="radio" id="May be" name="opinion" value="May be">
+                <label for="May be">May be</label>
+                <br>
+                <input type="radio" id="Not sure" name="opinion" value="Not sure">
+                <label for="Not sure">Not sure</label>
+            </div>
+            <br>
+
+            <!-- check boxes -->
+            What would you like to see improved? (check all that apply)
+            <br>
+            <input type="checkbox" id="Front-end Projects" value="Front-end Projects" name="checkbox">
+            <label for="Front-end Projects">Front-end Projects</label>
+            <br>
+            <input type="checkbox" id="Back-end Projects" value="Back-end Projects" name="checkbox">
+            <label for="Back-end Projects">Back-end Projects</label>
+            <br>
+            <input type="checkbox" id="Data Visualization" value="Front-end Projects" name="checkbox">
+            <label for="Data Visualization">Data Visualization</label>
+            <br>
+            <input type="checkbox" id="Challenges" value="Challenges" name="checkbox">
+            <label for="Challenges">Challenges</label>
+            <br>
+            <input type="checkbox" id="Open Source Community" value="Open Source Community" name="checkbox">
+            <label for="Open Source Community">Open Source Community</label>
+            <br>
+            <input type="checkbox" id="Forum" value="Forum" name="checkbox">
+            <label for="Forum">Forum</label>
+            <br>
+            <input type="checkbox" id="Additional Courses" value="Additional Courses" name="checkbox">
+            <label for="Additional Courses">Additional Courses</label>
+            <br>
+            <br>
+
+            <!-- Comments or Suggestions-->
+            Any comments or suggestions?
+            <br>
+            <div>
+                <textarea placeholder="Enter your comment here..."></textarea>
+            </div>
+            <br>
+            <br>
+
+            <!-- submit button -->
+            <button id="submit">Submit</button>
+        
+        </form>
+
+    </div>
+
+</body>
+</html>
